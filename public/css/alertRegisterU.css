@@ -1,0 +1,65 @@
+.container:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("https://res.cloudinary.com/click-alert-fem/image/upload/v1656555687/clickalertfem/send2_wovk6y.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.card {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid rgb(132, 86, 132);
+
+}
+
+p {
+    font-size: 34px;
+    color: rgb(132, 86, 132);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#p1 {
+    font-size: 22px;
+    color: rgbrgb(132, 86, 132);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+a{
+    display: flex;
+    align-items: center;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones a {
+    font-size: 18px;
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botones a:hover {
+    color: rgb(182, 135, 187);
+}

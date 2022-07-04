@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickAlertFEM</title>
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <img src="https://res.cloudinary.com/click-alert-fem/image/upload/v1655907400/samples/25_jve0cl.svg" alt=""
+            class="padre">
+        <nav class="navegacion">
+            <a href="#">inicio</a>
+            <a href="/registro">registro</a>
+            <a href="/login">login</a>
+            <a href="#expertos">expertos</a>
+            <a href="#contacto">contacto</a>
+        </nav>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">servidores de tu bienestar y seguridad</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa</p>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="designed ">
+
+            <div class="container">
+                <h2 class="subtitle">Designed for the future</h2>
+                <div class="designed__container">
+                    <div class="designed__illustration"></div>
+
+                    <div class="designed__texts">
+                        <div class="designed__about designed__about--margin">
+                            <h2 class="designed__subtitle">Introducing an extensible editor</h2>
+                            <p class="designed__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium, fuga repellat. Dolor et assumenda omnis non molestiae iste temporibus eius,
+                                labore porro, distinctio sapiente natus doloremque voluptatibus, fuga eum fugit.</p>
+                        </div>
+                        <div class="designed__about">
+                            <h2 class="designed__subtitle">Robust content managment</h2>
+                            <p class="designed__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium, fuga repellat. Dolor et assumenda omnis non molestiae iste temporibus eius,
+                                labore porro, distinctio sapiente natus doloremque voluptatibus, fuga eum fugit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="infrastructure">
+
+            <div class="infrastructure__container container">
+                <img src="https://res.cloudinary.com/click-alert-fem/image/upload/v1655907386/samples/illustration-phones_gomj6c.svg"
+                    class="infrastructure__phones">
+
+                <div class="infrastructure__texts">
+                    <h2 class="infrastructure__title">State of the Art Infrastructure</h2>
+                    <p class="infrastructure__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio vero voluptas suscipit ab, quasi corrupti magni pariatur labore et, quisquam totam
+                        iste! Eum consequatur recusandae rerum et ex deleniti nisi?</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="designed designed--left">
+
+            <div class="container">
+
+                <div class="designed__container designed__container--left">
+                    <div class="designed__illustration designed__illustration--right"></div>
+
+                    <div class="designed__texts">
+                        <div class="designed__about designed__about--margin">
+                            <h2 class="designed__subtitle">Introducing an extensible editor</h2>
+                            <p class="designed__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium, fuga repellat. Dolor et assumenda omnis non molestiae iste temporibus eius,
+                                labore porro, distinctio sapiente natus doloremque voluptatibus, fuga eum fugit.</p>
+                        </div>
+                        <div class="designed__about">
+                            <h2 class="designed__subtitle">Robust content managment</h2>
+                            <p class="designed__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusantium, fuga repellat. Dolor et assumenda omnis non molestiae iste temporibus</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">click alert fem</h2>
+                <p>provedores de seguridad a un click</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-gmail'></i>
+                </a>
+
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-slack'></i>
+                </a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script>
+        const padre = document.querySelector('.padre');
+        const menu = document.querySelector('.navegacion');
+        console.log(menu);
+        console.log(padre);
+
+        padre.addEventListener('click', () => {
+            menu.classList.toggle("spread")
+        })
+        window.addEventListener('click', e => {
+            if (menu.classList.contains('spread') &&
+                e.target != menu && e.target != padre) {
+                menu.classList.toggle("spread")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
